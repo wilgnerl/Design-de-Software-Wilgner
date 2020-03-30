@@ -10,24 +10,23 @@ fichas = 100
 
 TWL = True
 while TWL:
-    pergunta1 = input("Você deseja apostar ou sair? ")
+    
+    dado1 = random.randint(1,6)
+                dado2 = random.randint(1,6)
+                resultado = dado1 + dado2
+                print('Resultado:',resultado)
+                time.sleep(1)    
 
-    if pergunta1 == 'sair':
-            TWL = False
-    if pergunta1 != 'sair':
-        #fazendo o sorteio dos dados e a soma dos resultados
-            dado1 = random.randint(1,6)
-            dado2 = random.randint(1,6)
-            resultado = dado1 + dado2     
-            #verificando a condição de ter ganho ou não
-            if resultado == 12:
-                print('você ganhou')
-                fichas = fichas + aposta*30
-                print('Agora você tem: ', fichas)
-                TWL = False
-            else: 
-                print('você perdeu')
-                fichas = fichas -  aposta
-                print('Agora você tem: ', fichas)
-                TWL = False
+                #verificando a condição de ter ganho ou não
+                if resultado == 12:
+                    print('você ganhou')
+                    fichas = fichas + aposta*30
+
+                    print('Agora você tem: ', fichas)
+                    TWL = False
+                else: 
+                    print('você perdeu')
+                    fichas = fichas -  aposta
+                    print('Agora você tem: ', fichas)
+                    TWL = False
             
