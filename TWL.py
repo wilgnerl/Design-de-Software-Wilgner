@@ -11,7 +11,7 @@ fichas = 100
 TWL = True
 while TWL:
     
-    dado1 = random.randint(1,6)
+                dado1 = random.randint(1,6)
                 dado2 = random.randint(1,6)
                 resultado = dado1 + dado2
                 print('Resultado:',resultado)
