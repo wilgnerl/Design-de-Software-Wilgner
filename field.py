@@ -29,7 +29,7 @@ while FIL:
                 FIL = False
             elif resultado == 3 or resultado == 4 or resultado == 9 or resultado == 10 or resultado == 11:
                 print('você ganhou')
-                fichas = fichas  
+                fichas = fichas + apostas
                 print('Agora você tem: ', fichas)
                 FIL = False
             elif resultado == 2:
