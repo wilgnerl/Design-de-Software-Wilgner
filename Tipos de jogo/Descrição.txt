@@ -1,0 +1,1 @@
+Essa pasta tem por objetivo organizar cada um dos arquivos de código dos 4 tipos de apostas do jogo. 
