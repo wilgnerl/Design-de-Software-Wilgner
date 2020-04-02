@@ -131,7 +131,7 @@ while inicio:
                             Point = False
                             PBL = False
                             print('Você Perdeu !')
-                            fichas = fichas 
+                            fichas = fichas - aposta
                             print('Agora você tem: ', fichas)
 
                         else:
