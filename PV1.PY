@@ -89,7 +89,7 @@ while inicio:
                 print('Você escolheu Twelve')
                 TWL = True
 
-
+# Modo de aposta Pass bit line
             while PBL == True :
         
                 dado1 = random.randint(1,6)
@@ -138,7 +138,8 @@ while inicio:
                             print('Novo Sorteio')
                             time.sleep(1)
 
-            while ACS == True:
+# Modo de aposta Any Craps
+            if ACS:
                 dado1 = random.randint(1,6)
                 dado2 = random.randint(1,6)
                 resultado = dado1 + dado2
@@ -157,7 +158,8 @@ while inicio:
                     print('Agora você tem: ', fichas)
                     ACS = False
 
-            while FIL:
+# Modo de aposta Field
+            if FIL:
 
                 dado1 = random.randint(1,6)
                 dado2 = random.randint(1,6)
@@ -190,7 +192,8 @@ while inicio:
                     print('Agora você tem: ', fichas)
                     FIL = False
 
-            while TWL:
+# Modo de aposta Twelve
+            if TWL:
 
                 dado1 = random.randint(1,6)
                 dado2 = random.randint(1,6)
